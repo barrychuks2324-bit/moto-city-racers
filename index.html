@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Moto City Racers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #f6f5f9;
+    --surface: #ffffff;
+    --text: #1c1a24;
+    --muted: #5f5b6e;
+    --line: #e2dfea;
+    --accent: #8a6a00;
+    --accent-bg: #ffd400;
+    --accent-ink: #1c1a24;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0e0c14; --surface: #17141f; --text: #eeecf4; --muted: #a7a2b8;
+      --line: #2b2638; --accent: #ffd400; --accent-bg: #ffd400; --accent-ink: #14121a;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0e0c14; --surface: #17141f; --text: #eeecf4; --muted: #a7a2b8;
+    --line: #2b2638; --accent: #ffd400; --accent-bg: #ffd400; --accent-ink: #14121a;
+    color-scheme: dark;
+  }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.65 Barlow, "Helvetica Neue", Arial, sans-serif; padding-inline: 16px; }
+  main { max-width: 680px; margin: 0 auto; padding-block: 40px 72px; display: flex; flex-direction: column; gap: 8px; }
+  .brand { font-family: "Russo One", "Arial Black", sans-serif; letter-spacing: 0.06em; font-size: 14px; color: var(--muted); text-transform: uppercase; }
+  .brand b { color: var(--accent); font-weight: 400; }
+  h1 { font-family: "Russo One", "Arial Black", sans-serif; font-weight: 400; font-size: clamp(30px, 6vw, 40px); line-height: 1.1; margin: 4px 0 0; text-wrap: balance; }
+  .lead { color: var(--muted); margin: 0 0 8px; }
+  .contact-card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; }
+  .contact-card p { margin: 0; }
+  .contact { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+  .email { font-weight: 600; user-select: all; border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; }
+  button { font: 600 15px Barlow, Arial, sans-serif; background: var(--accent-bg); color: var(--accent-ink); border: 0; border-radius: 8px; padding: 8px 14px; cursor: pointer; }
+  button:focus-visible { outline: 3px solid var(--text); outline-offset: 2px; }
+  h2 { font-family: "Russo One", "Arial Black", sans-serif; font-weight: 400; font-size: 19px; margin: 24px 0 0; text-wrap: balance; }
+  p { margin: 6px 0 0; max-width: 65ch; }
+  .prices { display: grid; grid-template-columns: 1fr auto; gap: 4px 20px; max-width: 360px; margin-top: 8px; font-variant-numeric: tabular-nums; }
+  .prices span:nth-child(even) { text-align: right; color: var(--muted); }
+  a { color: var(--accent); font-weight: 600; }
+  footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">Moto <b>City</b> Racers</div>
+  <h1>Motorbike racing in 4 cities</h1>
+  <p class="lead">Race superbikes through neon streets, sunny coasts, desert canyons and snowy mountain passes. Win races, earn coins and build your dream garage.</p>
+  <img src="icon.png" alt="Moto City Racers app icon" width="160" height="160" style="border-radius:36px;margin:8px 0 12px" />
+  <p><a href="https://apps.apple.com/app/moto-city-racers/id6816148636">Download on the App Store</a></p>
+  <h2>Help</h2>
+  <p><a href="support.html">Help and Support</a></p>
+  <h2>Privacy</h2>
+  <p><a href="privacy.html">Privacy Policy</a></p>
+  <footer>Contact: pocketblockslcd@gmail.com</footer>
+</main>
+</body>
+</html>
